@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Fingerprint Capture</title>
+</head>
+<body>
+    
+
+    <div class="container">
+
+
+       
+
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="page-header">
+                    <h1 class="text-center"> Click Start to begin </h1>
+                  </div>
+
+                  <div class="alert alert-warning text-center" role="alert" id="status">Place your Right Index Finger</div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 col-md-offset-2" id="lfinger">
+                        <small>Right Index Finger</small>
+                      <a href="#" class="thumbnail capturing">
+                        <img src="images/fingerprint.png" id="lindexfinger" alt="...">
+                      </a>
+        
+                      <div class="xprogress">
+                          <div class="square"   id="lfingersample1"></div>
+                          <div class="square"   id="lfingersample2"></div>
+                          <div class="square"   id="lfingersample3"></div>
+                      </div>
+        
+                      
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-md-offset-2" id="rfinger">
+                        <small>Left Index Finger</small>
+                        <a href="#" class="thumbnail">
+                          <img src="images/fingerprint.png" id="rindexfinger" alt="...">
+                        </a>
+                        <div class="xprogress">
+                            <div class="square" id="rfingersample1"></div>
+                            <div class="square" id="rfingersample2"></div>
+                            <div class="square" id="rfingersample3"></div>
+                        </div>
+                      </div>
+                   
+                  </div>
+                 <div class="triggers">
+                    <input class="btn btn-default btn-lg btn-block" type="button" value="Start Capturing">
+                    <input class="btn btn-default btn-lg btn-block" type="button" value="Finish">
+                 </div>
+                  
+            </div>
+
+            
+          </div>
+
+
+    </div>
+    
+
+
+
+    <script src="lib/jquery.min.js"></script> 
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="scripts/es6-shim.js"></script>
+    <script src="scripts/websdk.client.bundle.min.js"></script>
+    <script src="scripts/fingerprint.sdk.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
